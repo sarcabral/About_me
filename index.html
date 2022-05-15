@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Sarah Cabral</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>SC</h1>
+      </div>
+      <ul>
+        <li>
+          <a target="_blank" href="https://github.com/Sar000inha">Github</a>
+        </li>
+        <li>
+          <a target="_blank" href="mailto:sarahcabral2013@gmail.com">E-mail</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://wa.me/91984086571">Celular</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="container">
+        <div class="name">
+          <h1>Sarah Cabral</h1>
+          <h5>Estudante Universitária</h5>
+        </div>
+
+        <div onclick="displayAbout()" id="arrow">
+          <i id="animation"><img src="imagens/seta.png"></i>
+        </div>
+
+        <div onclick="displayAbout()" id="about">
+          <p>
+            Sou uma Estudante de Engenharia da Computação da UFPA, tentado
+            descobrir seu lugar no mundo da tecnologia! Possuo noções básicas de
+            C, C++, Python e aprendendo sobre HTML, CSS e Javascript.
+          </p>
+        </div>
+
+        <div class="form">
+          <div>
+            <p>Deixe seu contato!</p>
+          </div>
+          <form action="">
+            <input type="text" placeholder="Seu melhor e-mail :)" />
+            <button>Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function displayAbout(){
+        var arrow = document.getElementById('animation');
+        arrow.classList.toggle('rotate');
+        var display = document.getElementById('about');
+        display.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>
